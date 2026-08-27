@@ -1,32 +1,84 @@
-# React + TypeScript + Vite
+# GitFinder — GitHub User Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Overview
 
-Currently, two official plugins are available:
+**GitFinder** is an intuitive and responsive web application that enhances the GitHub user experience. This application provides an elegant interface for managing and interacting with various aspects of GitHub, such as repositories, forks, followers and following. Developed with a mobile-first design philosophy, it ensures a seamless experience across a wide range of devices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This repository is a **React + TypeScript rewrite** of my older app, which was originally built with plain HTML, CSS, and JavaScript. The previous vanilla version is available here:
 
-## React Compiler
+<a href="https://github.com/billalben/github-app"><strong>➥ Older App (HTML/CSS/JS)</strong></a>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Key Features
 
-## Expanding the Oxlint configuration
+**Responsive Design**: Adaptability to all device types, prioritizing mobile users.
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+**Dark/Light Mode**: User-selectable theme for comfortable viewing.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+**User Search Functionality**: Efficient search feature for GitHub users.
+
+**Repositories Panel**: Manage and interact with your GitHub repositories.
+
+**Forked Panel**: View and organize forked repositories.
+
+**Followers Panel**: Track and engage with your GitHub followers.
+
+**Following Panel**: Monitor who you are following on GitHub.
+
+**Load More**: Repositories are loaded in pages with a "Load more" button.
+
+**Skeleton**: Showing a nice skeleton before showing data.
+
+## Technologies Used
+
+**React**: Component-based UI library for building the interface.
+
+**TypeScript**: Typed JavaScript for safer, more maintainable code.
+
+**Vite**: Fast build tool and development server.
+
+**CSS**: For styling elements, with a focus on responsiveness.
+
+**GitHub API**: Integrated for accessing and displaying GitHub data.
+
+## Features in Detail
+
+### Responsive and User-Friendly Interface:
+
+The application is built using the mobile-first methodology, ensuring that it performs well on mobile devices, tablets, and desktops. The UI adapts gracefully to different screen sizes, maintaining usability and aesthetics.
+
+### Dark and Light Modes
+
+Users can switch between dark and light themes, allowing for a more personalized experience that's easier on the eyes, especially during different times of the day or in varying light conditions.
+
+### Interactive Panels:
+
+Each panel (Repositories, Forked, Followers, Following) is designed to provide a comprehensive view and control over the user's GitHub data, making it easy to manage and interact with different aspects of their GitHub profile.
+
+## Getting Started
+
+```bash
+# Install dependencies
+pnpm install
+
+# Start the development server
+pnpm dev
+
+# Build for production
+pnpm build
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Acknowledgments
+
+Special thanks to [codewithsadee](https://github.com/codewithsadee), his expertise in writing clean code, creating well-structured HTML, efficient CSS styling, and clean JavaScript code, whose tutorials and guidance have been instrumental in the development of the GitHub App project.
+
+## Contributing
+
+Your contributions are welcome and greatly appreciated. Follow these steps to contribute:
+
+**Fork the Project**: `Create your Feature Branch (git checkout -b feature/YourAmazingFeature).`
+
+**Commit your Changes**: `(git commit -m 'Add some AmazingFeature')`.
+
+**Push to the Branch** `(git push origin feature/YourAmazingFeature)`.
+
+**Open a Pull Request.**
