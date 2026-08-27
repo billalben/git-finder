@@ -1,0 +1,93 @@
+/* +++ Icon Button +++ */
+.icon-btn {
+  background-color: var(--surface-variant);
+  min-width: 48px;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-circle);
+  border: 1px solid var(--surface-variant-outline);
+  display: grid;
+  place-items: center;
+  transition: var(--transition-short);
+  transition-property: background-color, border-color;
+}
+.icon-btn:where(:hover, :focus-visible):not(:active) {
+  background-color: var(--surface-variant-hover);
+  border-color: var(--surface-variant-outline-hover);
+}
+.icon-btn .material-symbols-rounded {
+  color: var(--on-background);
+}
+
+/* +++ Button +++ */
+.btn {
+  padding-inline: 24px;
+  height: 40px;
+  font-size: var(--label-1);
+  font-weight: var(--weight-medium);
+  max-width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  line-height: 40px;
+  transition: var(--transition-short);
+  border: 1px solid transparent;
+  border-radius: var(--radius-8);
+  -webkit-border-radius: var(--radius-8);
+  -moz-border-radius: var(--radius-8);
+  -ms-border-radius: var(--radius-8);
+  -o-border-radius: var(--radius-8);
+  -webkit-transition: var(--transition-short);
+  -moz-transition: var(--transition-short);
+  -ms-transition: var(--transition-short);
+  -o-transition: var(--transition-short);
+}
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--white);
+  border-color: var(--primary-outline);
+}
+.btn-primary:where(:hover, :focus-visible):not(:active) {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-outline-hover);
+}
+.btn-secondary {
+  background-color: var(--surface-1);
+  color: var(--primary);
+  border-color: var(--surface-1-outline);
+}
+.btn-secondary:where(:hover, :focus-visible):not(:active) {
+  background-color: var(--surface-1-hover);
+  border-color: var(--surface-1-outline-hover);
+}
+
+/* +++ Badge +++ */
+.badge {
+  background-color: var(--surface-variant);
+  color: var(--alpha-60);
+  max-width: max-content;
+  font-size: var(--label-2);
+  font-weight: var(--weight-semiBold);
+  text-transform: uppercase;
+  height: 24px;
+  line-height: 24px;
+  padding-inline: 12px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--surface-variant-outline);
+}
+
+/* +++ Card +++ */
+.card {
+  --spacing: 16px;
+  background-color: var(--surface);
+  overflow: hidden;
+  border-radius: var(--radius-12);
+  -webkit-border-radius: var(--radius-12);
+  -moz-border-radius: var(--radius-12);
+  -ms-border-radius: var(--radius-12);
+  -o-border-radius: var(--radius-12);
+}
+.card :where(.card-body, .card-footer) {
+  padding: var(--spacing);
+}

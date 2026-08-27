@@ -1,0 +1,14 @@
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-block: 16px;
+  width: 100%;
+}
+.btn-wrapper > * {
+  min-width: 110px;
+}
+.next-prev-btn[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

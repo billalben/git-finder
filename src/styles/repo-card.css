@@ -1,0 +1,47 @@
+/* +++ Repository Card +++ */
+.repo-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.repo-card .card-body {
+  flex-grow: 1;
+}
+.repo-card .card-title {
+  max-width: max-content;
+  padding-inline-end: 76px;
+  transition: var(--transition-short);
+  -webkit-transition: var(--transition-short);
+  -moz-transition: var(--transition-short);
+  -ms-transition: var(--transition-short);
+  -o-transition: var(--transition-short);
+}
+.repo-card .card-title:where(:hover, :focus-visible) {
+  color: var(--primary);
+}
+.repo-card .card-text {
+  color: var(--on-surface-variant);
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  margin-block-start: 8px;
+}
+.repo-card .badge {
+  position: absolute;
+  top: var(--spacing);
+  right: var(--spacing);
+}
+.repo-card .card-footer {
+  background-color: var(--surface-variant);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing);
+}
+.repo-card .meta-item {
+  color: var(--on-surface);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}

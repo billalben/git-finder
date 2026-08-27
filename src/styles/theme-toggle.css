@@ -1,0 +1,10 @@
+[data-theme-btn] {
+  transition: var(--transition-medium);
+}
+[data-theme="dark"] [data-theme-btn] {
+  transform: rotate(-90deg);
+}
+[data-theme="dark"] .theme-btn .moon-icon,
+[data-theme="light"] .theme-btn .sun-icon {
+  display: none;
+}
